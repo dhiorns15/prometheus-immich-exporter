@@ -178,7 +178,7 @@ class ImmichMetricsCollector:
     def get_immich_server_info(self):
 
         try:
-            endpoint_server_info = "/api/server-info"
+            endpoint_server_info = "/api/server-info/storage"
             response_server_info = requests.request(
                 "GET",
                 self.combine_url(endpoint_server_info),
